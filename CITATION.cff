@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Jika template ini membantu penulisan atau pengembangan Anda, gunakan metadata berikut untuk memberikan atribusi perangkat lunak."
+type: software
+title: "Template Skripsi LaTeX FILKOM UB — Universitas Brawijaya"
+authors:
+  - family-names: "Sudiara Putra"
+    given-names: "Pande Kadek Nathan Prabhaswara"
+    website: "https://github.com/Vallykrie"
+version: "0.1.0"
+date-released: "2026-10-03"
+url: "https://github.com/Vallykrie/skripsi-filkom-latex"
+repository-code: "https://github.com/Vallykrie/skripsi-filkom-latex"
+license: "LPPL-1.3c"
+keywords:
+  - LaTeX
+  - thesis template
+  - skripsi
+  - FILKOM UB
+  - Universitas Brawijaya
+  - XeLaTeX
+  - Overleaf

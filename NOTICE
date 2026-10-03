@@ -1,0 +1,9 @@
+# Lisensi dan pemeliharaan
+
+Copyright 2026 Pande Kadek Nathan Prabhaswara Sudiara Putra.
+
+Kode, contoh teks, dan dokumentasi repository ini tersedia menurut LaTeX Project Public License (LPPL) versi 1.3c atau lebih baru. Teks lisensi lengkap terdapat pada LICENSE. Status pemeliharaan: maintained. Current Maintainer: Pande Kadek Nathan Prabhaswara Sudiara Putra (Vallykrie).
+
+Work terdiri atas berkas source dan dokumentasi yang dilacak Git, kecuali aset institusional yang dikecualikan pada assets/NOTICE.md. Font Calibri, dokumen resmi kampus, dan isi skripsi pengguna tidak didistribusikan oleh paket. Lambang, nama, serta merek institusi tetap milik pemegang haknya.
+
+Gaya bibliografi dan format dasar diadaptasi dari repository proposal open source milik penulis: https://github.com/Vallykrie/proposal-skripsi-filkom-latex. Repository ini menambahkan struktur laporan skripsi dan contoh generik; tidak menyatakan pengesahan oleh FILKOM UB.

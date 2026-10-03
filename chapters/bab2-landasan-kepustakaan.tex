@@ -1,0 +1,86 @@
+\chapter{LANDASAN KEPUSTAKAAN}
+\label{bab:landasan}
+
+Bab ini menunjukkan cara menata landasan, mendefinisikan istilah, serta menghubungkan uraian dengan sumber. Sumber yang digunakan merupakan dokumentasi resmi perangkat penyusunan naskah. Rujukan tersebut disertakan untuk memperlihatkan sitasi yang dapat ditelusuri, bukan sebagai pengganti tinjauan pustaka pada bidang penelitian pengguna.
+
+\section{Landasan Penyusunan Dokumen}
+
+\subsection{Struktur dan Makna Bagian}
+
+Penataan dokumen dimulai dari hubungan antargagasan. Bab mengelompokkan pokok bahasan utama, bagian memperinci pokok tersebut, dan subbagian memisahkan uraian yang masih berada dalam satu pembahasan. Pembagian yang jelas membantu pembaca menemukan informasi tanpa menghilangkan alur argumentasi. Pemilihan judul sebaiknya didasarkan pada isi, bukan pada kebutuhan untuk mengisi setiap tingkat penomoran.
+
+\textcite{latexproject-documentation} menyediakan dokumentasi inti \LaTeX{} bagi penulis, termasuk panduan tentang perintah dan penyusunan dokumen. Dalam contoh ini, perintah judul, rujukan, dan persamaan digunakan untuk menunjukkan pemisahan struktur dari tampilan. Satu perubahan pada pengaturan dokumen dapat diterapkan ke bagian terkait tanpa mengubah redaksi setiap paragraf secara manual.
+
+\subsection{Paragraf dan Penjelasan Unsur}
+
+Paragraf yang baik mengembangkan satu pokok gagasan. Kalimat pembuka dapat menyatakan pokok tersebut, kemudian kalimat berikutnya memberi penjelasan, bukti, atau hubungan dengan pembahasan. Paragraf penutup bagian dapat menghubungkan gagasan yang telah diterangkan dengan langkah berikutnya. Panjang paragraf disesuaikan dengan kebutuhan penjelasan, sehingga pembaca dapat mengikuti gagasan tanpa memecah atau menggabungkannya kembali.
+
+Tabel dan gambar membantu menjelaskan informasi tertentu, tetapi tetap memerlukan pengantar serta penjelasan. Pengantar memberi alasan unsur tersebut ditampilkan. Penjelasan sesudah unsur dapat mengarahkan pembaca pada hubungan yang relevan dengan tujuan bagian. Menempatkan tabel tanpa merujuknya dalam narasi membuat pembaca harus menafsirkan kegunaannya sendiri.
+
+\subsubsection{Contoh Tingkat Judul Ketiga}
+
+Subsubbagian ini memperlihatkan tingkat judul ketiga. Gunakan tingkat ini apabila pembagian tambahan membantu pembaca mengenali uraian yang masih berada dalam satu subbagian. Apabila sebuah subbagian hanya memerlukan paragraf singkat, judul tambahan mungkin tidak diperlukan. Pengguna dapat menghapus bagian ini setelah memahami perilaku penomorannya.
+
+\section{Font dan Mesin Kompilasi}
+
+Paket \texttt{fontspec} menyediakan antarmuka pemilihan font untuk XeLaTeX dan LuaLaTeX, termasuk dukungan font OpenType \parencite{ctan-fontspec}. Informasi tersebut mendasari penggunaan mesin kompilasi yang sesuai dalam template. Ketersediaan font dan hak penggunaannya perlu diperhatikan ketika naskah dipindahkan antarperangkat atau dibagikan kepada pengguna lain.
+
+Pilihan font pada keluaran perlu dibaca bersama ketentuan penulisan yang berlaku. Tampilan yang mirip belum tentu memenuhi ketentuan font tertentu. Ketika pengguna menyiapkan berkas font sendiri, pengaturan proyek sebaiknya dibuat jelas agar dokumen dapat diperiksa dengan lingkungan yang sama. Naskah contoh tidak menyertakan berkas font berlisensi milik pengguna.
+
+\section{Sitasi dan Daftar Referensi}
+
+\subsection{Sitasi dalam Narasi}
+
+Sitasi dapat menjadi bagian dari narasi ketika penulis atau organisasi sumber perlu disebut secara langsung. Bentuk \textcite{ctan-biblatex} pada kalimat ini memperlihatkan penempatan tersebut. Bentuk lain meletakkan identitas sumber dalam tanda kurung pada akhir pernyataan yang didukung \parencite{ctan-biblatex}. Pengguna dapat membandingkan kedua bentuk pada sumber dan keluaran naskah.
+
+Paket \texttt{biblatex} mengelola pemformatan sitasi dan daftar referensi, serta dapat memakai Biber untuk membaca data bibliografis \parencite{ctan-biblatex}. Dalam contoh ini, identitas sumber ditulis pada berkas bibliografi dan dipanggil melalui kunci sitasi. Jika nama sumber atau alamat berubah setelah pemeriksaan, pembaruan dilakukan pada entri sumber sehingga penulisan dalam naskah tetap konsisten.
+
+\subsection{Kelengkapan Data Bibliografis}
+
+Setiap entri harus sesuai dengan jenis sumber sebenarnya. Artikel jurnal, buku, dan halaman dokumentasi mempunyai unsur identitas yang berbeda. Penulis tidak perlu mengisi DOI, tahun, nomor volume, atau halaman dengan nilai rekaan hanya agar semua kolom tampak terisi. Apabila tahun penerbitan halaman daring tidak diketahui, data tersebut dapat tidak dicantumkan; tanggal akses dicatat secara terpisah.
+
+Bibliografi contoh memuat tiga halaman dokumentasi resmi bertipe sumber daring. Semuanya dipanggil pada bab ini sehingga hubungan antara sitasi dan daftar referensi dapat diperiksa. Pada penelitian sesungguhnya, tambahkan hanya sumber yang digunakan dalam argumentasi. Daftar referensi tidak perlu diperluas dengan sumber yang belum dibaca untuk memperbesar jumlah entri.
+
+\section{Contoh Notasi dan Persamaan}
+\label{sec:contoh-notasi}
+
+Persamaan \ref{eq:contoh-rerata} memperlihatkan penulisan rerata aritmetika untuk himpunan nilai $x_1,\ldots,x_n$. Persamaan tersebut hanya contoh format, tanpa nilai observasi yang dinyatakan telah diperoleh:
+\begin{equation}
+  \bar{x}=\frac{1}{n}\sum_{i=1}^{n}x_i,\qquad n>0.
+  \label{eq:contoh-rerata}
+\end{equation}
+Indeks $i$ menunjuk anggota himpunan, $n$ menyatakan banyaknya anggota, dan $\bar{x}$ menyatakan rerata. Notasi didefinisikan setelah persamaan agar pembaca tidak perlu menebak arti simbol. Pada skripsi sesungguhnya, jelaskan asumsi, satuan, serta kondisi ketika suatu persamaan dapat digunakan.
+
+Contoh lain adalah transformasi berdasarkan dua batas nilai yang berbeda. Persamaan \ref{eq:contoh-normalisasi} memperlihatkan pecahan, indeks, dan syarat penyebut:
+\begin{align}
+  z_i &= \frac{x_i-x_{\min}}{x_{\max}-x_{\min}},
+  \label{eq:contoh-normalisasi}\\
+  x_{\max} &> x_{\min}.
+  \nonumber
+\end{align}
+Transformasi ini ditampilkan untuk mengilustrasikan lingkungan persamaan beberapa baris. Contoh tidak menyatakan bahwa transformasi tersebut selalu diperlukan atau tepat bagi penelitian tertentu. Definisi besaran dan batas penggunaannya harus disesuaikan dengan metode sebenarnya.
+
+Tabel \ref{tab:contoh-notasi} menata simbol yang telah digunakan. Pada naskah dengan banyak simbol, tabel serupa dapat membantu menjaga kesamaan makna antarbab.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Contoh keterangan notasi matematika}
+  \label{tab:contoh-notasi}
+  \begin{tabular}{lp{9.8cm}}
+    \toprule
+    Simbol & Keterangan \\
+    \midrule
+    $x_i$ & Nilai anggota ke-$i$ dalam suatu himpunan \\
+    $n$ & Banyaknya anggota, dengan syarat $n>0$ \\
+    $\bar{x}$ & Rerata aritmetika sebagaimana Persamaan \ref{eq:contoh-rerata} \\
+    $x_{\min},x_{\max}$ & Batas bawah dan batas atas yang berbeda \\
+    $z_i$ & Nilai hasil transformasi pada Persamaan \ref{eq:contoh-normalisasi} \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Hubungan Landasan dengan Metode}
+
+Landasan kepustakaan sebaiknya berakhir dengan hubungan konsep dan keputusan penelitian. Konsep yang dijelaskan perlu mempunyai peran dalam pemilihan metode, penyusunan instrumen, pembentukan ukuran, atau penafsiran. Sebaliknya, konsep yang tidak digunakan dapat dipertimbangkan kembali agar pembaca tidak menerima uraian panjang yang terputus dari tujuan penelitian.
+
+Pada contoh ini, struktur dokumen mendasari pembagian bab, rujukan silang menghubungkan unsur, dan data bibliografis mengikat pernyataan dengan sumbernya. Bab \ref{bab:metodologi} memakai hubungan tersebut untuk menata tahapan penyusunan contoh. Pengguna perlu mengganti hubungan ini dengan hubungan yang benar pada penelitian yang dikerjakan.

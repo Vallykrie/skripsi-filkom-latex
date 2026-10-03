@@ -1,0 +1,53 @@
+{
+  "template": "skripsi-filkom-latex",
+  "version": "0.1.0",
+  "audit_date": "2026-10-03",
+  "public_proposal_base": {
+    "repository": "https://github.com/Vallykrie/proposal-skripsi-filkom-latex",
+    "commit": "6266b0daa678f5f7df50569a362676e8dad550f8",
+    "reused_files": [
+      {
+        "path": "assets/logo-ub.svg",
+        "sha256": "47f1aa7d2b067dc3224a9e0066d09d49a3db84a8130c280de2dac296d57965c7"
+      },
+      {
+        "path": "assets/logo-ub.png",
+        "sha256": "91363236c92555dd39e1e0951f87622fa42510150f54e14e7fd3a26048925a7c"
+      },
+      {
+        "path": "assets/NOTICE.md",
+        "sha256": "78a0a225cce0e7e4fa19a0640a330a594a1b1ea796d7fe91f8fc3ec75b03cde0"
+      },
+      {
+        "path": "bibliography/filkom-authoryear.bbx",
+        "sha256": "e46e460d4ff7284f773edfd5c6079db19b8e7e8f8767aff098e4ee9691a71fb3"
+      },
+      {
+        "path": "bibliography/filkom-authoryear.cbx",
+        "sha256": "ddfeb7dc96bb1ca4a784540bd21c1a1e4da4ff2310bf9509fb04e5752312d9c6"
+      },
+      {
+        "path": "indonesian.lbx",
+        "sha256": "afabe4f43f64ac65473196d4be944b2ccce029a019d098e23fc65bcc5b4ccd7a"
+      }
+    ]
+  },
+  "format_references": [
+    {
+      "title": "Layanan Akademik FILKOM UB",
+      "url": "https://filkom.ub.ac.id/pendidikan/layanan-akademik-filkom-ub/",
+      "accessed": "2026-10-03"
+    },
+    {
+      "title": "Panduan Skripsi FILKOM v3.0",
+      "url": "https://file-filkom.ub.ac.id/fileupload/assets/upload/filemanager/Skripsi/PanduanSkripsiFilkom-v3.0.pdf",
+      "accessed": "2026-10-03",
+      "sha256": "7eb12c17a53cfc2c1bcada8d427bf43cc76daf55692b576435bc51af261191c8",
+      "bundled": false
+    }
+  ],
+  "logo_note": "Asal dan hak aset tercatat di assets/NOTICE.md. Tanggal audit bukan klaim pengunduhan ulang logo.",
+  "fonts_bundled": false,
+  "official_university_template": false,
+  "scope": "Kode template dan contoh generik; tanpa data penelitian, identitas mahasiswa sebenarnya, atau riwayat repository penelitian."
+}

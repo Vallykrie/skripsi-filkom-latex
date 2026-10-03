@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Panduan penggunaan template
+    url: https://github.com/Vallykrie/skripsi-filkom-latex#dokumentasi
+    about: Mulai dari panduan lokal, Overleaf, dan troubleshooting.
+  - name: Template proposal skripsi FILKOM UB
+    url: https://github.com/Vallykrie/proposal-skripsi-filkom-latex
+    about: Gunakan repository pendamping untuk naskah tahap proposal.

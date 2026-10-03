@@ -1,0 +1,38 @@
+\documentclass{filkomskripsi}
+\input{metadata}
+\makeatletter
+\def\input@path{{bibliography/}}
+\makeatother
+\usepackage[backend=biber,style=filkom-authoryear,language=english,autolang=none]{biblatex}
+\DeclareLanguageMapping{indonesian}{english}
+\ExecuteBibliographyOptions{uniquename=false,uniquelist=false,urldate=iso}
+% Tanggal akses bukan tahun penerbitan; tanpa date/year tampil n.d.
+\DeclareLabeldate{\field{date}\field{year}\literal{nodate}}
+\setlength{\bibhang}{0.9cm}
+\addbibresource{bibliography/references.bib}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,shapes.geometric}
+\emergencystretch=3em
+\begin{document}
+\makeskripsicover
+\skripsifrontmatter
+\input{frontmatter/persetujuan}
+% Setelah ujian dan revisi disahkan, ganti input di atas dengan:
+% \input{frontmatter/pengesahan}
+\input{frontmatter/orisinalitas}
+\input{frontmatter/prakata}
+\input{frontmatter/abstrak}
+\input{frontmatter/abstract}
+\makeskripsilists
+\skripsimainmatter
+\input{chapters/bab1-pendahuluan}
+\input{chapters/bab2-landasan-kepustakaan}
+\input{chapters/bab3-metodologi}
+\input{chapters/bab4-hasil}
+\input{chapters/bab5-pembahasan}
+\input{chapters/bab6-penutup}
+\printbibliography[heading=bibintoc,title={DAFTAR REFERENSI}]
+\appendix
+\input{appendices/lampiran-contoh}
+\input{appendices/lampiran-tambahan}
+\end{document}

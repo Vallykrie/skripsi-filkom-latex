@@ -1,0 +1,59 @@
+name: Bug kompilasi atau perilaku template
+description: Laporkan kegagalan build atau perilaku yang dapat direproduksi.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Sertakan contoh minimal. Hapus identitas, NIM, tanda tangan, kredensial, dan data penelitian privat. Untuk perbedaan terhadap pedoman, gunakan form permintaan format.
+  - type: input
+    id: version
+    attributes:
+      label: Versi template
+      description: Tag rilis atau commit yang digunakan.
+      placeholder: v0.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Lingkungan kompilasi
+      description: Sistem operasi, distribusi TeX, versi XeLaTeX/Biber, dan penggunaan lokal atau Overleaf.
+    validations:
+      required: true
+  - type: input
+    id: build_command
+    attributes:
+      label: Perintah build atau pengaturan Overleaf
+      placeholder: python3 scripts/build.py preview
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Langkah reproduksi dan contoh minimal
+      description: Apa yang diubah dan bagaimana masalah dapat diulang? Ganti isi pribadi dengan teks generik.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Hasil yang diharapkan
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Hasil aktual dan kesalahan pertama
+      description: Sertakan bagian log yang relevan atau screenshot. Jangan kirim seluruh naskah bila tidak diperlukan.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checked
+    attributes:
+      label: Pemeriksaan pelapor
+      options:
+        - label: Saya memilih XeLaTeX dan skripsi.tex sebagai berkas utama.
+          required: true
+        - label: Saya telah menghapus data pribadi dan materi terbatas dari lampiran.
+          required: true

@@ -1,0 +1,55 @@
+name: Penyesuaian format atau pedoman
+description: Usulkan perubahan format dengan rujukan dan cakupan yang jelas.
+title: "[Format]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Template ini bukan rilis resmi fakultas. Sertakan sumber yang dapat ditinjau dan bedakan pedoman umum dari arahan khusus satu naskah. Hapus identitas dan tanda tangan dari screenshot.
+  - type: input
+    id: version
+    attributes:
+      label: Versi template
+      placeholder: v0.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: reference
+    attributes:
+      label: Rujukan pedoman
+      description: URL sumber langsung atau kutipan pendek yang diperlukan, judul/versi/tanggal dokumen, serta halaman atau subbab. Jangan gunakan halaman hasil pencarian sebagai rujukan.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Cakupan ketentuan
+      description: Fakultas, program studi, jenis penelitian, periode berlaku, atau arahan khusus pembimbing.
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Format saat ini
+      description: Sebutkan bagian naskah dan sertakan contoh generik atau screenshot jika membantu.
+    validations:
+      required: true
+  - type: textarea
+    id: desired
+    attributes:
+      label: Format yang diusulkan
+      description: Jelaskan perubahan konkret dan hubungannya dengan rujukan.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Dampak pada pengguna lain
+      description: Jika belum diketahui, jelaskan pemeriksaan yang diperlukan. Jangan mengasumsikan ketentuan lokal berlaku untuk semua pengguna.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Pemeriksaan lampiran
+      options:
+        - label: Lampiran tidak memuat data pribadi, tanda tangan, atau materi yang tidak boleh dipublikasikan.
+          required: true
